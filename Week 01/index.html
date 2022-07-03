@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tranning 01 </title>
+    </head>
+    <body> 
+        <!--Thêm chữ Go to blog kèm đường link sang blog.html-->
+        <a href="blog.html">Go to blog</a>
+        <!--Day la phan note chi de coder nhin thay, dung lenh <! -- .. --, -->
+        <h1> Y chinh 1</h1>
+        <h2> Y chinh 2</h2>
+        <h3> Y chinh 3</h3>
+        <h4> Y chinh 4</h4>
+        <h5> Y chinh 5</h5>
+        <h6> Y chinh 6</h6>
+
+        <!-- khi da co dan y chinh thi se bat dau viet doan code -->
+        <!-- Paragraph-->
+        <p1>
+
+            Hom nay la buoi dau tien tap code 
+        <!--<br> là lệnh xuống dòng-->    
+            <br>
+            <strong> lenh strong la de in dam phan minh muon</strong>
+            <br>
+            <em> Lenh em la de in nghieng phan minh muon</em>
+
+        </p1>
+        <p2>
+            <a href="http://google.com"target="_blank" > duong linh vao google</a>
+            <!-- dùng lệnh <a href="đường link cần đi tới" > tên mình muốn người dùng click vào để ra trang web mình dán link </a>-->
+            <!-- nếu muốn người dùng khi click vào đường link chuyển sang một tab mới thì dùng lệnh target ="_blank"-->
+
+        </p2>
+        <!-- LISTS Danh sách chia làm 2 loại là danh sách có thứ tự và danh sách không có thứ tự-->
+        <!-- Danh sách không có thứ tự-->
+        <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+            <li>List item 4</li>
+        </ul>
+        <!-- Danh sách có thứ tự-->
+        <ol>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+            <li>List item 4</li>
+        </ol>
+
+        <!-- TABLE BẢNG-->
+        <!-- Table sẽ có 2 phần là phần đầu và phần thân (Thead và Tbody)-->
+        <!-- Khi ta nhập dữ liệu cho Thead thì ta sẽ dùng lệnh Tr và Th -->
+        <!-- Tr trong Table row và Th trong Table heading-->
+        <table>
+            <!-- Thead -->
+            <thead>
+
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+
+            </thead>
+        <!-- Khi ta nhập dữ liệu cho Tbody thì ta sẽ dùng lệnh Tr và Td-->
+        <!-- Trong đó Tr là Table row và Td là Table data-->
+            <tbody>
+                <tr>
+                    <td>Duc Phan</td>
+                    <td>ducphan9915@mail.com</td>
+                    <td>23</td>
+                </tr>
+
+                <tr>
+                    <td>Trung Trinh</td>
+                    <td>trung28899@gmail.com</td>
+                    <td>23</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--Form - làm form biểu mẫu-->
+        <br>
+        <!-- Lệnh hr là lệnh tạo dòng kẻ ngang -->
+        <hr>
+        <br>
+        <!-- Lệnh tạo form, trong đó action là thuộc tính method là phương pháp-->
+        <form action="process .php" method="POST">
+            <!--Lệnh div là lệnh division, hiểu nôm na là tạo thành các block để phân chia khu vực-->
+            <div> 
+                <!-- lệnh label là lệnh đặt tên cho từ khóa mà mình điền vào -->
+                <label>First Name</label>
+                <!-- Lệnh input là cài đặt phương thức nhập cho tên từ khóa-->
+                <input type="text" name="first name"
+                placeholder="Enter first name">
+                <!--Lệnh placeholder là lệnh để chữ ẩn ở phần điền, khi ấn điền thì sẽ mất đi-->
+                <!--Lệnh value="" là lệnh sẽ hiện sẵn chữ ở phần cần điền, khi muốn điền thì sẽ phải xóa phần chữ đã mặc định ở trong ô-->
+            </div>
+            <br>
+            <div> 
+                <label>Last Name</label>
+                <input type="text" name="last name">
+            </div>
+            <br>
+            <div> 
+                <label>Email</label>
+                <input type="text" name="email name">
+            </div>
+            <br>
+            <div> 
+                <label>Message</label>
+                <!-- Lệnh textarea tạo khu vực có thể kéo dãn to nhỏ để tùy ý, để viết ko hạn chế số chữ-->
+                <textarea name = "Message"> </textarea>
+            </div>
+            <br>
+            <div> 
+                <label>Gender</label>
+                <!-- Lệnh select giúp tạo một ô mà có nhiều lựa chọn để chọn-->
+                <select name = "Gender"> 
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+                </select>
+            </div>
+            <br>
+            <div> 
+                <label>Age</label>
+                <!--Lệnh input là lệnh chọn với định dạng là số và số mặc định là 30, có mũi tên xuống để chọn số-->
+                <input type="number" name="Age"
+                value ="30">
+            </div>
+            <br>
+            <div> 
+                <label>Birthday:</label>
+                <!--Lệnh input với định dạng ngày-->
+                <input type="date" name="Birthday">
+            </div>
+            <br>
+            <div> 
+              
+                <input type="submit" name="submit"
+                value="Submit">
+            </div>
+        </form>
+        <br>
+        <!-- Imange chèn ảnh--> 
+        <img src="ngoc trinh.jfif" width="200">
+
+        <br>
+        <br>
+        <!--BUTTON tạo nút-->
+        <button>Click me</button>
+        <br>
+
+        <!--Quoutation tạo trích dẫn-->
+            <blockquote cite ="https://www.facebook.com/">
+                Lên
+            </blockquote>
+        
+            <p>
+                <!--Khi viết một từ viết tắt thì khi chỉ con trỏ chuột sẽ hiển thị đủ -->
+                The <abbr title="Darris is so good">DISG</abbr> mmmm
+            </p>
+
+            <p><cite>HTML tour</cite> by Darris</p>
+        <div style="margin-top:500px"></div>
+    </body>
+</html>

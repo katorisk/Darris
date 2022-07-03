@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Lệnh title - viết tiêu đề của blog-->
+    <title>My blog</title>
+    <!--Lệnh meta sẽ ko hiển thị lên trang blog nhưng nó sẽ có trong mã nguồn và những trình duyệt web sẽ lấy những từ khóa, 
+        mô tả chúng ta ghi để quét-->
+    <meta name="description" content="Awesome blog by Darris">
+    <meta name="keywords" content="Web design blog, training code, beginner">
+    <!--Lệnh style là lệnh căn chỉnh màu, vị trí, màu nền, cỡ chữ-->
+    <style type="text/css">
+        #main-header{
+            text-align:center;
+            background-color:black;
+            color:white ;
+            padding: 10px;
+        }
+
+    #main-footer{
+        text-align:center;
+        font-size:18px;
+    }
+    </style>
+</head>
+<body>
+    <!--Lệnh id để chỉnh màu như cài đặt ở lệnh style-->
+    <header id="main-header">
+        <h1>My blog</h1>
+    </header>
+
+    <a href="index.html">Go to index</a>
+    <!--Lệnh sextion là lệnh tạo đoạn văn-->
+    <section>
+        <article class="post">
+            <h3>Blog post one</h3>
+            <small>Posted by Darris on June 29</small>
+            <p> Hôm nay tôi bắt đầu viết blog</p>
+            <a href="post.html"> Read more</a>
+        </article>
+
+        <article class="post">
+            <h3>Blog post two</h3>
+            <small>Posted by Darris on June 29</small>
+            <p> Hôm nay tôi bắt đầu viết blog</p>
+            <a href="post.html"> Read more</a>
+        </article>
+
+        <article class="post">
+            <h3>Blog post three</h3>
+            <small>Posted by Darris on June 29</small>
+            <p> Hôm nay tôi bắt đầu viết blog</p>
+            <a href="post.html"> Read more</a>
+        </article>
+    </section>
+
+    <aside>
+
+        <h3>Catagories</h3>
+        <nav>
+            <ul>
+                <!--chèn đường dẫn vào Catagories kiểu tạo mục lục-->
+                <li><a href="#1">Catagories 1</a></li>
+                <li><a href="#2">Catagories 2</a></li>
+                <li><a href="#3">Catagories 3</a></li>
+            </ul>
+        </nav>
+    </aside>
+       <!--Lệnh id để chỉnh màu như cài đặt ở lệnh style-->
+    <footer id="main-footer"/id=>
+        <p> Copyright &copy; 2022, My Blog</p>
+    </footer>
+</body>    
+</html>
